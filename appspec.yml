@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
     + source: /
-      destination: ~/simpleApp
+      destination: /home/ec2-user/simpleApp
 hooks:
 #  ApplicationStop:
 #    - location: deployment.js
