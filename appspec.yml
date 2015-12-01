@@ -1,21 +1,13 @@
 version: 0.0
 os: linux
 files:
-    + source: /
+    - source: /
       destination: /home/ec2-user/simpleApp
 hooks:
-#  ApplicationStop:
-#    - location: deployment.js
-#      timeout: 180
-  BeforeInstall:
-    + location: deployment.js
-      timeout: 180
   AfterInstall:
-    + location: deployment.js
-      timeout: 180
+    - location: stop.sh
+      runas: root
   ApplicationStart:
-    + location: deployment.js
-      timeout: 180
-  ValidateService:
-    + location: deployment.js
-      timeout: 180
+    - location: start.sh
+      runas: root
+
