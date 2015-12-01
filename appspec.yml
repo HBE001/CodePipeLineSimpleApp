@@ -8,6 +8,6 @@ hooks:
   # - location: stop.sh
   #   runas: ec2-user
   ApplicationStart:
-    - location: start.sh
+    - location: /home/ec2-user/simpleApp/start.sh
       runas: ec2-user
 
