@@ -2,4 +2,4 @@
 
 
 #!/bin/sh
-pm2 start app.js
+sudo pm2 start app.js
