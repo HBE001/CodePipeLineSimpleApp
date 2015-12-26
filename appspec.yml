@@ -6,5 +6,8 @@ files:
 hooks:
   AfterInstall:
     - location: stop.sh
+      runas: sudo
   ApplicationStart:
     - location: start.sh
+      runas: sudo
+
