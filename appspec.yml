@@ -2,12 +2,12 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /home/lotusinterworks.internal/yahyas
+      destination: /home/lotusinterworks.internal/yahyas/codedeploy
 hooks:
   AfterInstall:
-    - location: /home/lotusinterworks.internal/yahyas/stop.sh
+    - location: ./~/stop.sh
       runas: yahyas@lotusinterworks.internal
   ApplicationStart:
-    - location: /home/lotusinterworks.internal/yahyas/start.sh
+    - location: ./~/start.sh
       runas: yahyas@lotusinterworks.internal
 
