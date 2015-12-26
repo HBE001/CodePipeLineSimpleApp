@@ -5,9 +5,9 @@ files:
       destination: /home/lotusinterworks.internal/yahyas
 hooks:
   AfterInstall:
-    - location: stop.sh
+    - location: /home/lotusinterworks.internal/yahyas/stop.sh
       runas: yahyas@lotusinterworks.internal
   ApplicationStart:
-    - location: start.sh
+    - location: /home/lotusinterworks.internal/yahyas/start.sh
       runas: yahyas@lotusinterworks.internal
 
