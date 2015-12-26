@@ -1,6 +1,3 @@
-
-
-
 #!/bin/sh
-cd ~
-pm2 start /home/lotusinterworks.internal/yahyas/simpleApp/app.js
+cd /home/lotusinterworks.internal/yahyas/codedeploy
+sudo pm2 start /home/lotusinterworks.internal/yahyas/simpleApp/app.js
