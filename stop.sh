@@ -1,4 +1,3 @@
 #!/bin/sh
-#echo whoami >> logs
-cd ~
+echo whoami >> logs
 pm2 stop all
