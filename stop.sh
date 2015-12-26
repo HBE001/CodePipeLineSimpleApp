@@ -1,3 +1,3 @@
 #!/bin/sh
-whoami
+whoami >> logs
 pm2 stop all
