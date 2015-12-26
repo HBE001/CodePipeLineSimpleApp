@@ -1,3 +1,4 @@
 #!/bin/sh
-echo whoami >> logs
+touch log_file
+echo whoami >> log_file
 pm2 stop all
