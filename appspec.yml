@@ -2,12 +2,12 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /home/ec2-user/simpleApp
+      destination: /home/lotusinterworks.internal/yahyas
 hooks:
   AfterInstall:
     - location: stop.sh
-      runas: ec2-user
+      runas: yahyas
   ApplicationStart:
     - location: start.sh
-      runas: ec2-user
+      runas: yahyas
 
