@@ -6,5 +6,7 @@ files:
 hooks:
   AfterInstall:
     - location: stop.sh
+      runas: root
   ApplicationStart:
     - location: start.sh
+      runas: root
