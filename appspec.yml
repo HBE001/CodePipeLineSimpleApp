@@ -5,6 +5,9 @@ files:
       destination: /home/lotusinterworks.internal/yahyas/simpliadeployment
       overwrite: yes
 hooks:
+  BeforeInstall:
+    - location: cleanup.sh
+      runas: root
   AfterInstall:
     - location: stop.sh
       runas: root
