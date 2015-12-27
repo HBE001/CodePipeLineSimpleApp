@@ -1,3 +1,3 @@
 #!/bin/sh
 cd /home/lotusinterworks.internal/yahyas/codedeploy
-app.js
+pm2 app.js
