@@ -2,11 +2,9 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /home/lotusinterworks.internal/yahyas/createode
+      destination: /home/lotusinterworks.internal/yahyas/simpliadeployment
 hooks:
   AfterInstall:
     - location: stop.sh
-      runas: root
   ApplicationStart:
     - location: start.sh
-      runas: root
