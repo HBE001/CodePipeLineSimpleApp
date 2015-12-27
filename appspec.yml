@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /home/lotusinterworks.internal/yahyas/codedeploy
+      destination: /home/lotusinterworks.internal/yahyas/createode
 hooks:
   AfterInstall:
     - location: stop.sh
